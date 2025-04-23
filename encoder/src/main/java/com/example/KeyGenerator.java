@@ -58,7 +58,6 @@ public class KeyGenerator {
             }
             if (content.isEmpty()) {
                 System.out.println("генерация ключа");
-                //если это кто-то читает, просьба не задовать вопросов по определёным решениям
                 enLeterArray.addAll(Arrays.asList(symbols));
                 try(FileWriter file = new FileWriter(PATH + "/Key.txt", false)) {
                     for (int i = 0; i < ruLetters.length; i++){
